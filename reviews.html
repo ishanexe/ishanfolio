@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews Page</title>
+</head>
+<body>
+    <h1>Share Your Review</h1>
+    <form id="reviewForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="review">Review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            fetch('/submit_review', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>

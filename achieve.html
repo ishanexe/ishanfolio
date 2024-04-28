@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>My Achievements</title>
+    <style>
+        /* Additional Styles for Enhancement */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Reset default margin */
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            margin: 10px; /* Add margin between sections */
+            transition: transform 0.3s ease-in-out;
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .section img {
+            max-width: 100%;
+            max-height: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover img {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        /* Additional Styles for Achievements */
+        .achievement-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        .achievement-card {
+            width: calc(50% - 10px); /* 2 in 1 row with margin in between */
+            margin-bottom: 20px;
+            padding: 15px; /* Reduced padding */
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .achievement-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .achievement-card h2 {
+            margin-top: 0;
+        }
+
+        .achievement-card p {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+
+        .description {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="proj">My Achievements</div>
+    </div>
+    <hr>
+
+    <div class="achievement-row">
+        <!-- Achievement 1: ISRO's START Programme -->
+        <div class="achievement-card section">
+            <img src="start.png" alt="ISRO's START Programme">
+            <div class="description">
+                <h2>ISRO's START Programme</h2>
+                <p>Achieved completion of ISRO's Student Training and Research in Technology (START) Programme. This programme provided hands-on training and research opportunities in space technology and satellite systems.</p>
+            </div>
+        </div>
+
+        <!-- Achievement 2: IEEE Coding Contest -->
+        <div class="achievement-card section">
+            <img src="ieee.jpeg" alt="IEEE Coding Contest">
+            <div class="description">
+                <h2>IEEE Coding Contest</h2>
+                <p>Participated in the IEEE Coding Contest organized by the Institute of Electrical and Electronics Engineers (IEEE). The contest involved solving algorithmic problems and coding challenges.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="achievement-row">
+        <!-- Achievement 3: ISRO's Workshop on Remote Sensing -->
+        <div class="achievement-card section">
+            <img src="remot.png" alt="ISRO's Workshop on Remote Sensing">
+            <div class="description">
+                <h2>ISRO's Workshop on Remote Sensing</h2>
+                <p>Attended ISRO's workshop on Remote Sensing, which provided insights into the applications of remote sensing technology in various fields such as agriculture, environmental monitoring, and disaster management.</p>
+            </div>
+        </div>
+
+        <!-- Achievement 4: Aerodynamics Workshop at Team Maverick -->
+        <div class="achievement-card section">
+            <img src="aero.png" alt="Aerodynamics Workshop at Team Maverick">
+            <div class="description">
+                <h2>Aerodynamics Workshop at Team Maverick</h2>
+                <p>Participated in an aerodynamics workshop organized by Team Maverick, a student-led aerospace engineering organization. The workshop covered topics such as airfoil design, aerodynamic analysis, and flight dynamics.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Want to know more about my work? Contact me at ishandutta4573@gmail.com</p>
+        <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
+    </div>
+</body>
+</html>

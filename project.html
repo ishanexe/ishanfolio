@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>My Projects</title>
+    <style>
+        /* Additional Styles for Enhancement */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Reset default margin */
+        }
+
+        .section {
+            margin: 10px; /* Add margin between sections */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="proj">Explore My Projects</div>
+    </div>
+    <hr>
+    <div class="sections">
+        <div class="section" onclick="window.location.href='webdevp.html'">
+            <div class="btn">🌐 Web Development</div>
+        </div>
+        <div class="section" onclick="window.location.href='python.html'">
+            <div class="btn">🐍 Python Projects</div>
+        </div>
+        <div class="section" onclick="window.location.href='#'">
+            <div class="btn">🔬 Research</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Want to know more about my work? Contact me at ishandutta4573@gmail.com</p>
+        <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
+    </div>
+</body>
+</html>

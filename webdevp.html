@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Web Development Projects</title>
+    <style>
+        /* Additional Styles for Enhancement */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Reset default margin */
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            margin: 10px; /* Add margin between sections */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        /* Additional Styles for Project Cards */
+        .project-card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h2 {
+            margin-top: 0;
+        }
+
+        .project-card p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="proj">Web Development Projects</div>
+    </div>
+    <hr>
+
+    <!-- Project 1: Netflix Clone -->
+    <div class="project-card">
+        <h2>Project 1: Netflix Clone</h2>
+        <img src="net.png" alt="Netflix Clone">
+        <p>This project is a clone of Netflix built using HTML, CSS, and JavaScript. It replicates the user interface and functionality of the popular streaming platform, allowing users to browse through movies and TV shows, view details, and play trailers.</p>
+    </div>
+
+    <!-- Project 2: Game of Stone Paper Scissors -->
+    <div class="project-card">
+        <h2>Project 2: Game of Stone Paper Scissors</h2>
+        <img src="game.png" alt="Game of Stone Paper Scissors">
+        <p>This project is a web-based game of Stone Paper Scissors implemented using HTML, CSS, and JavaScript. It provides an interactive interface where users can play the classic game against the computer, with options to choose between stone, paper, or scissors.</p>
+    </div>
+
+    <!-- Project 3: Blogging Website -->
+    <div class="project-card">
+        <h2>Project 3: Blogging Website</h2>
+        <img src="blog.png" alt="Blogging Website">
+        <p>This project is a simple blogging website created using HTML, CSS, and JavaScript. It allows users to create, edit, and delete blog posts, as well as interact with other users through comments and likes. The website features a clean and responsive design for optimal user experience.</p>
+    </div>
+
+    <!-- Project 4: Spotify Clone -->
+    <div class="project-card">
+        <h2>Project 4: Spotify Clone</h2>
+        <img src="spo.png" alt="Spotify Clone">
+        <p>This project is a clone of the popular music streaming service Spotify, developed using HTML and CSS. It mimics the design and layout of the Spotify web application, allowing users to browse through music tracks, create playlists, and enjoy their favorite songs.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Want to know more about my work? Contact me at ishandutta4573@gmail.com</p>
+        <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Python Projects</title>
+    <style>
+        /* Additional Styles for Enhancement */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Reset default margin */
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            margin: 10px; /* Add margin between sections */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        /* Additional Styles for Project Cards */
+        .project-card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h2 {
+            margin-top: 0;
+        }
+
+        .project-card p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="proj">Python Projects</div>
+    </div>
+    <hr>
+
+    <!-- Project 1: Sign Up Page using Tkinter -->
+    <div class="project-card">
+        <h2>Project 1: Sign Up Page using Tkinter</h2>
+        <img src="sign.png" alt="Sign Up Page">
+        <p>This project is a sign-up page GUI application developed using Python and the Tkinter library. It provides a user-friendly interface for users to create new accounts by entering their details such as username, email, and password.</p>
+    </div>
+
+    <!-- Project 2: To-Do List using Tkinter -->
+    <div class="project-card">
+        <h2>Project 2: To-Do List using Tkinter</h2>
+        <img src="task.png" alt="To-Do List">
+        <p>This project is a to-do list application created using Python and Tkinter. It allows users to manage their tasks by adding, editing, and deleting items on their to-do list. The application provides a simple and intuitive interface for organizing daily tasks.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Want to know more about my work? Contact me at ishandutta4573@gmail.com</p>
+        <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
+    </div>
+</body>
+</html>

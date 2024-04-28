@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Changed to white */
+    margin-bottom: 10px;
+}
+
+.content {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.education {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.education .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Changed to white */
+    margin-bottom: 10px;
+}
+
+.education .content {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.interests {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.interests .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Changed to white */
+    margin-bottom: 10px;
+}
+
+.interests .content {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.odd-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333; /* Changed to match div color */
+    color: #fff; /* Changed to white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.odd-button:hover {
+    background-color: #555; /* Darken on hover */
+}

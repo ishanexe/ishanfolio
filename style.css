@@ -1,0 +1,417 @@
+body {
+    /* background-color: black; */
+    background-image: url(vvi.jpeg);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.main {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 800px;
+    width: 1400px;
+    left: 40px;
+    z-index: -2;
+    color: white; /* Text color */
+}
+
+/* Rest of your CSS code here */
+
+
+.background-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 550px;
+    background-image: url('vs.jpg');
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.name1, .name2, .name3 {
+    font-size: 30px;
+    position: absolute;
+    color: white; /* Text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.3),
+        0 0 5px rgba(255, 255, 255, 0.3),
+        0 0 8px rgba(255, 255, 255, 0.3),
+        0 0 10px rgba(128, 0, 128, 0.5),
+        0 0 15px rgba(128, 0, 128, 0.5),
+        0 0 20px rgba(128, 0, 128, 0.5);
+}
+
+
+.name2 {
+    top: 50px;
+    left: 108px;
+    transform: translateX(-50%);
+    font-size: 40px;
+}
+
+.name1 {
+    position: absolute;
+    top: -50px; /* Initial position above the screen */
+    /* left: ; */
+    left: 45px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    opacity: 0; /* Initially hidden */
+    animation: slideFromTop 1s ease forwards; /* Apply slideFromTop animation */
+}
+
+.name2 {
+    position: absolute;
+    top: 50px;
+    left: -300px; /* Initial position outside the screen from left */
+    font-size: 40px;
+    opacity: 0; /* Initially hidden */
+    animation: slideFromLeft 1s ease forwards; /* Apply slideFromLeft animation */
+}
+
+@keyframes slideFromTop {
+    0% {
+        top: -50px; /* Start from above the screen */
+        opacity: 0; /* Initially hidden */
+    }
+    100% {
+        top: 20px; /* End at final position */
+        opacity: 1; /* Show at final position */
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        left: -300px; /* Start from outside the screen on the left */
+        opacity: 0; /* Initially hidden */
+    }
+    100% {
+        left: 108px; /* End at final position */
+        opacity: 1; /* Show at final position */
+    }
+}
+
+
+.name3 {
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:50px;
+}
+
+.name3 {
+    position: absolute;
+    bottom: -50px; /* Initial position below the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    opacity: 0; /* Initially hidden */
+    animation: slideFromCenter 1s ease forwards; /* Apply slideFromCenter animation */
+}
+
+@keyframes slideFromCenter {
+    0% {
+        bottom: -50px; /* Start from below the screen */
+        opacity: 0; /* Initially hidden */
+    }
+    100% {
+        bottom: 100px; /* End at final position */
+        opacity: 1; /* Show at final position */
+    }
+}
+
+
+ /* .top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+} 
+
+  .top-right button { 
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    /* all: unset; */
+
+
+
+  
+
+.top-right button{
+    border: 1px white ;
+    color: black;
+    background-color:black;
+
+}
+
+.b1,.b2,.b3{
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    /* top: 20px; */
+    bottom: 760px;
+    left: 1100px;
+}
+
+
+.cont{
+    height:350px;
+    width: 1400px;
+    /* background-color: blue; */
+    margin-top:50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+.div1, .div2, .div3 {
+    margin-top: 10px;
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.div1{
+    position: relative;
+    right: 8px;
+    /* background-image: url(1.png); */
+    background-size: contain;
+}
+
+.div2{
+    /* background-image: url(2.png); */
+    background-size: contain;
+    position: relative;
+    left: 50px;
+}
+
+.div3{
+    position: relative;
+    left:100px;
+    /* background-image: url(Now\ Open!\ \(1\).png); */
+    background-size: contain;
+
+}
+
+
+
+.me{
+    /* display: flex; */
+    margin-top: 400px;
+    font-size: 40px;
+    color: white;
+}
+
+.l{
+    display: flex;
+    font-size: 30px;
+}
+
+
+
+
+
+
+.cont{
+    position: relative;
+    left: 100px;
+    justify-content: space-evenly;
+}
+
+
+
+.div1,.div2,.div3 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+.div1,.div2,.div3{
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    /* width: 400px;
+    height: 400px; */
+    background-color: #f0f0f0;
+    /* border: 2px solid #333; */
+    border-radius: 25px;
+    /* left: 50px; */
+    top: 150px;
+}
+
+.blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Adjust the width of each block */
+    height: 400px; /* Adjust the height of each block */
+    background-color: #f0f0f0;
+    /* border: 1px solid #333; */
+    line-height: 100px;
+    white-space: nowrap;
+    animation: slide 8s infinite;
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    20% {
+        transform: translateX(0); /* Stay on the current block */
+    }
+    25% {
+        transform: translateX(-100%); /* Slide to show next block */
+    }
+    45% {
+        transform: translateX(-100%); /* Stay on the next block */
+    }
+    50% {
+        transform: translateX(-200%); /* Slide to show next block */
+    }
+    70% {
+        transform: translateX(-200%); /* Stay on the next block */
+    }
+    75% {
+        transform: translateX(-300%); /* Slide to show next block */
+    }
+    95% {
+        transform: translateX(-300%); /* Stay on the next block */
+    }
+    100% {
+        transform: translateX(0); /* Slide back to start position */
+    }
+}
+
+
+/* gets zoom when hover */
+.b3:hover{
+    transform: scale(1.1);
+    /* background: #ff800a; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px #000;
+    
+}
+
+
+.b2:hover{
+    transform: scale(1.1);
+    /* background: #ff800a; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px #000;
+    
+}
+
+.b1:hover{
+    transform: scale(1.1);
+    /* background: #ff800a; */
+    z-index: 1;
+    box-shadow: 2px 2px 2px #000;
+    
+}
+
+
+
+.i3{
+    position: relative;
+    left: 940px;
+
+}
+
+.i2{
+    position: relative;
+    left: 570px;
+
+}
+
+.i1{
+    position: relative;
+    left: 200px;
+}
+
+
+.i1,.i2,.i3{
+    border: 2px white solid;
+    background-color: transparent;
+    /* size: 50px; */
+    color: white;
+    height: 50px;
+    width: 100px;
+}
+
+
+.me{
+    display: flex;
+    height: 100px;
+    width:800px ;
+    /* background-color: red; */
+    position: relative;
+    left: 350px;
+    justify-content: space-evenly;
+    top: 50px;
+}
+
+
+
+.div1{
+    background-color: aquamarine;
+}
+.div2{
+    background-color:aqua;
+}
+.div3{
+    background-color:chartreuse;
+}
+
+
+
+
+
+.nm {
+    position: fixed;
+    display: none; /* Initially hide the button */
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    border: 2px white solid;
+    right: 20px; /* adjust this value as needed */
+    bottom: 20px; /* adjust this value as needed */
+    z-index: 999; /* ensures the button stays above other elements */
+}
+
+
+
+
